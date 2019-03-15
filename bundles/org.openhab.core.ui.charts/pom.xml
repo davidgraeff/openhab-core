@@ -9,26 +9,30 @@
     <version>2.5.0-SNAPSHOT</version>
   </parent>
 
-  <artifactId>org.openhab.core.io.rest.sitemap</artifactId>
+  <artifactId>org.openhab.core.ui.charts</artifactId>
 
-  <name>openHAB Core :: Bundles :: Sitemap REST Interface</name>
+  <name>openHAB Core :: Bundles :: UI :: Charts</name>
 
   <dependencies>
     <dependency>
+      <groupId>org.knowm.xchart</groupId>
+      <artifactId>xchart</artifactId>
+      <version>2.6.1</version>
+    </dependency>
+    <dependency>
       <groupId>org.openhab.core.bundles</groupId>
-      <artifactId>org.openhab.core.io.rest.core</artifactId>
+      <artifactId>org.openhab.core.persistence</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.openhab.core.bundles</groupId>
-      <artifactId>org.openhab.core.ui.sitemap</artifactId>
+      <artifactId>org.openhab.core.transform</artifactId>
       <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>org.openhab.core.bundles</groupId>
-      <artifactId>org.openhab.core.test</artifactId>
+      <artifactId>org.openhab.core.io.http</artifactId>
       <version>${project.version}</version>
-      <scope>test</scope>
     </dependency>
     <dependency>
       <groupId>org.openhab.core.bom</groupId>
